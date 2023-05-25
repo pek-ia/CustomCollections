@@ -6,7 +6,7 @@ public class FixedList<T extends Comparable<T>> {
 
     private int max;
 
-    private List<T> items = new ArrayList<T>();
+    private List<T> itemsList = new ArrayList<T>();
 
 
     public FixedList(int maxItems){
@@ -15,9 +15,9 @@ public class FixedList<T extends Comparable<T>> {
 
 
     public boolean add(T t) {
-        if (items.size() < max) {
-            items.add(t);
-            Collections.sort(items);
+        if (itemsList.size() < max) {
+            itemsList.add(t);
+            Collections.sort(itemsList);
             return true;
         }
         else {
@@ -25,7 +25,7 @@ public class FixedList<T extends Comparable<T>> {
         }
     }
 
-    public List<T> getItems(){
-        return items;
+    public List<T> getItemsList(){
+        return itemsList;
     }
 }
