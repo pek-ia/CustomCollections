@@ -8,7 +8,7 @@ public class Main {
         sixpack.add(new Bottle(2));
         sixpack.add(new Bottle(222));
 
-        for (Bottle b: sixpack.getItems()){
+        for (Bottle b: sixpack.getItemsList()){
             System.out.println(b.ounces);
         }
 
