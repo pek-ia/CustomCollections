@@ -9,6 +9,10 @@ public class Bottle implements Comparable<Bottle> {
         return ounces;
     }
 
+    public int getMilliliters(){
+        return ounces * 30;
+    }
+
 
     @Override
     public int compareTo(Bottle o) {
