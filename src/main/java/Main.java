@@ -6,7 +6,6 @@ public class Main {
         sixpack.add(new Bottle(12));
         sixpack.add(new Bottle(1));
         sixpack.add(new Bottle(2));
-        sixpack.add(new Bottle(1));
         sixpack.add(new Bottle(222));
 
         for (Bottle b: sixpack.getItems()){
