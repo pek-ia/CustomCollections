@@ -4,18 +4,18 @@ import java.util.List;
 
 public class FixedList<T extends Comparable<T>> {
 
-    private int maxItems;
+    private int max;
 
     private List<T> items = new ArrayList<T>();
 
 
     public FixedList(int maxItems){
-        this.maxItems = maxItems;
+        this.max = maxItems;
     }
 
 
     public boolean add(T t) {
-        if (items.size() < maxItems) {
+        if (items.size() < max) {
             items.add(t);
             Collections.sort(items);
             return true;
